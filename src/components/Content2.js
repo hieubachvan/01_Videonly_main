@@ -32,6 +32,10 @@ const Wrapper = styled.section`
   .btn {
     border-radius: 20px;
   }
+  @media screen and (max-width: 416px) {
+    padding-right: 4rem;
+    padding-left: 4rem;
+  }
 `;
 
 export default Content2;

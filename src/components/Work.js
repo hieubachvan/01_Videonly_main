@@ -84,7 +84,7 @@ function Work(props) {
   );
 }
 const Wrapper = styled.section`
-  padding: 5rem;
+  padding: 2rem 4rem;
   display: flex;
   ${"" /* height: 100vh; */}
 
@@ -138,7 +138,7 @@ const Wrapper = styled.section`
   }
   .btn {
     width: 200px;
-    margin: 5rem auto;
+    margin: 2rem auto;
     border-radius: 20px;
   }
 `;

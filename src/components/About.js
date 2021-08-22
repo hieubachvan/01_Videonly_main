@@ -11,12 +11,12 @@ const Services = () => {
             Custom Furniture <br />
             Built Only For You
           </h3>
-          <h5>
+          <p>
             Lorem ih5sum dolor sit amet consectetur adipisicing elit. Saepe
             dolorum debitis consectetur reprehenderit non aliquam voluptates
             dolore aut vero consequuntur.Lorem ih5sum dolor sit amet consectetur
             adipisicing elit. Saepe dolorum debitis consectetur
-          </h5>
+          </p>
         </article>
       </div>
     </Wrapper>
@@ -24,13 +24,8 @@ const Services = () => {
 };
 
 const Wrapper = styled.section`
-  margin-bottom: 15rem;
   background-color: var(--clr-primary-10);
 
-  article {
-    ${"" /* background-color: red; */}
-    margin-bottom: 10rem;
-  }
   @media (min-width: 992px) {
     .header {
       display: grid;
@@ -64,6 +59,14 @@ const Wrapper = styled.section`
     h5 {
       margin: auto;
       text-align: center;
+    }
+  }
+  @media screen and (max-width: 415px) {
+    .header {
+      display: flex;
+      flex-direction: column;
+      padding-left: 4rem;
+      padding-right: 4rem;
     }
   }
 `;

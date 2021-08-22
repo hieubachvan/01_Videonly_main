@@ -4,8 +4,11 @@ import logo from "../assets/logo.svg";
 import { FaBars } from "react-icons/fa";
 import { Link } from "react-router-dom";
 import { links } from "../utils/constants";
+import { useProductsContext } from "../context/context";
 
 const Nav = () => {
+  const { isSidebarOpen, openSidebar } = useProductsContext();
+  // console.log(isSidebarOpen);
   return (
     <NavContainer>
       <div className="nav-center">
@@ -13,7 +16,7 @@ const Nav = () => {
           <a href="/">
             <img src={logo} alt="logo" />
           </a>
-          <button type="button" className="nav-toggle">
+          <button type="button" className="nav-toggle" onClick={openSidebar}>
             <FaBars />
           </button>
         </div>
@@ -25,6 +28,10 @@ const Nav = () => {
               </li>
             );
           })}
+        </ul>
+        <ul className="login-btn">
+          <li className="btn">Login</li>
+          <li className="btn">Register</li>
         </ul>
       </div>
     </NavContainer>
@@ -72,8 +79,16 @@ const NavContainer = styled.nav`
   .cart-btn-wrapper {
     display: none;
   }
+  @media (max-width: 985px) {
+    .btn {
+      display: none;
+    }
+  }
 
   @media (min-width: 992px) {
+    .btn {
+      margin-left: 2rem;
+    }
     .nav-toggle {
       display: none;
     }

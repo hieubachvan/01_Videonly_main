@@ -83,11 +83,15 @@ const Wrapper = styled.section`
     display: flex;
     justify-content: space-evenly;
   }
-  @media (max-width: 414px) {
+  @media (max-width: 424px) {
     .icon-container {
       display: grid;
       grid-template-columns: 1fr;
       font-size: 6rem;
+    }
+    .title {
+      padding-right: 2rem;
+      padding-left: 2rem;
     }
   }
 `;

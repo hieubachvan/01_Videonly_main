@@ -50,6 +50,7 @@ const Wrapper = styled.section`
     }
   }
   @media screen and (max-width: 959px) {
+    margin-bottom: 2rem;
     display: grid;
     grid-template-columns: 1fr;
     padding: 0 5rem;

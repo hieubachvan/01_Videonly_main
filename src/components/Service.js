@@ -105,6 +105,9 @@ const Wrapper = styled.section`
       display: grid;
       grid-template-columns: 1fr;
     }
+    h3 {
+      padding: 0 2rem;
+    }
   }
 `;
 

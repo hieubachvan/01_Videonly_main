@@ -32,7 +32,7 @@ const Wrapper = styled.section`
   ${
     "" /* background: url(https://baoquocte.vn/stores/news_dataimages/quangchinh/042017/08/09/091742_Vi_sao_nhiYu_ngYYi_MY_Yang_rYi_bY_cac_thanh_phY_lYn.jpg); */
   }
-  @media screen and (max-width: 414px) {
+  @media screen and (max-width: 460px) {
     img {
       display: none;
     }
