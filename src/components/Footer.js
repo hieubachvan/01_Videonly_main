@@ -32,15 +32,31 @@ function Footer(props) {
   );
 }
 const Wrapper = styled.section`
-  display: flex;
-  justify-content: space-between;
-  padding: 0 10rem;
-  margin-bottom: 2rem;
-  .social-network {
+  @media (min-width: 960px) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+
+    padding: 0 20rem;
+    margin-bottom: 2rem;
+
+    .social-network {
+      display: flex;
+      justify-content: flex-end;
+    }
+    svg {
+      font-size: 1.8rem;
+      margin: 0.5rem;
+      color: var(--clr-primary-1);
+    }
+  }
+  @media screen and (max-width: 959px) {
+    display: grid;
+    grid-template-columns: 1fr;
+    padding: 0 5rem;
   }
   svg {
-    font-size: 1.8rem;
-    margin: 0.5rem;
+    font-size: 1.2rem;
+    margin-right: 0.5rem;
     color: var(--clr-primary-1);
   }
 `;

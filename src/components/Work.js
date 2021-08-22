@@ -86,9 +86,19 @@ function Work(props) {
 const Wrapper = styled.section`
   padding: 5rem;
   display: flex;
-  height: 100vh;
+  ${"" /* height: 100vh; */}
 
   flex-direction: column;
+  @media (max-width: 970px) {
+    img {
+      display: none;
+    }
+    .content {
+      display: grid;
+      justify-content: center;
+      grid-template-columns: 1fr 1fr;
+    }
+  }
   p {
     color: var(--clr-grey-5);
   }
@@ -128,7 +138,7 @@ const Wrapper = styled.section`
   }
   .btn {
     width: 200px;
-    margin: 3rem auto;
+    margin: 5rem auto;
     border-radius: 20px;
   }
 `;
