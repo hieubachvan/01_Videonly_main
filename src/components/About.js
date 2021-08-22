@@ -12,10 +12,17 @@ const Services = () => {
             Built Only For You
           </h3>
           <p>
-            Lorem ih5sum dolor sit amet consectetur adipisicing elit. Saepe
-            dolorum debitis consectetur reprehenderit non aliquam voluptates
-            dolore aut vero consequuntur.Lorem ih5sum dolor sit amet consectetur
-            adipisicing elit. Saepe dolorum debitis consectetur
+            Salve omnibus, Im 'Hien sit amet National University of discipulus
+            in Information Technology, Honorius Chi Minh urbe, huc quasi ad
+            intern sum et cupio fieri plena tempus molestie.Salve omnibus, Im
+            'Hien sit amet National University of discipulus in Information
+            Technology, Honorius Chi Minh urbe, huc quasi ad intern sum et cupio
+            fieri plena tempus molestie. Salve omnibus, Im 'Hien sit amet
+            National University of discipulus in Information Technology,
+            Honorius Chi Minh urbe, huc quasi ad intern sum et cupio fieri plena
+            tempus molestie.Salve omnibus, Im 'Hien sit amet National University
+            of discipulus in Information Technology, Honorius Chi Minh urbe, huc
+            quasi ad intern sum et cupio fieri plena tempus molestie.
           </p>
         </article>
       </div>
@@ -34,14 +41,13 @@ const Wrapper = styled.section`
     h3 {
       margin-right: 2rem;
       border-right: 2px solid var(--clr-primary-7);
+      text-align: center;
     }
-    h5 {
+    p {
       line-height: 2;
       margin-left: 2rem;
     }
     .header {
-      margin-top: 10rem;
-
       padding-left: 15rem;
       padding-right: 15rem;
     }

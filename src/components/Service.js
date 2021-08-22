@@ -16,7 +16,7 @@ function Service(props) {
           <article className="item">
             <img src={img1} alt="hashuausc" />
             <div className="img-msg">
-              <p>hhaisduc ahsd uacs sdha sduaeh asdh asdh </p>
+              <p>Amoris abest ut obliviscantur dierum spatio fervens quam </p>
               <h5>
                 More views
                 <span>
@@ -28,7 +28,7 @@ function Service(props) {
           <article className="item">
             <img src={img2} alt="hashuausc" />
             <div className="img-msg">
-              <p>hhaisduc ahsd uacs sdha sduaeh asdh asdh </p>
+              <p>obliviscantur dierum spatio fervens quam tristis guttae </p>
               <h5>
                 More views
                 <span>
@@ -40,7 +40,10 @@ function Service(props) {
           <article className="item">
             <img src={img3} alt="hashuausc" />
             <div className="img-msg">
-              <p>hhaisduc ahsd uacs sdha sduaeh asdh asdh </p>
+              <p>
+                obliviscantur dierum spatio fervens quam tristis guttae sunt
+                nequam{" "}
+              </p>
               <h5>
                 More views
                 <span>

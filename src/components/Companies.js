@@ -5,8 +5,11 @@ function Companies(props) {
   return (
     <Wrapper>
       <div className="title">
-        <h2>Some companies i have joined</h2>
-        <h5>hhashduashdahscuahd</h5>
+        <h2>ego have pauci societates joined</h2>
+        <h5>
+          Hic sunt aliqua typicam societates praeter ipsam projects justo ac
+          justo ut non potuerunt projects
+        </h5>
       </div>
       <article className="img-container">
         <img
@@ -64,6 +67,7 @@ const Wrapper = styled.section`
     }
     .title {
       max-width: 400px;
+      padding: 0 2rem;
     }
     h2 {
       font-size: 1.5rem;

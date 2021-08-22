@@ -11,7 +11,7 @@ function Content() {
     <Wrapper>
       <div className="section-center">
         <div className="title">
-          <h2>Come here with us</h2>
+          <h2>Huc veni nobiscum</h2>
           <p>
             Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iusto, at
             sed omnis corporis doloremque possimus velit! Repudiandae nisi odit,
@@ -23,30 +23,30 @@ function Content() {
           <div className="icon">
             <RiCalendarCheckLine />
             <p>
-              this is my icon i am hieu stuf ffsfasd asda sdasda sda sda sd asd
-              dienhasdu cahsd ausd{" "}
+              Cum pace dirigens ad ambitum tooid opus, hic tam multa amico
+              exspectanda mus.{" "}
             </p>
           </div>
           <div className="icon">
             <IoFileTrayStackedOutline />
             <p>
-              this is my icon i am hieu stuf ffsfasd asda sdasda sda sda sd asd
-              dienhasdu cahsd ausd{" "}
+              mittere ad vos ut et plura huc hospita eruditorem exspectare amico
+              opus environment.{" "}
             </p>
           </div>
           <div className="icon">
             <GrDocumentText />
 
             <p>
-              this is my icon i am hieu stuf ffsfasd asda sdasda sda sda sd asd
-              dienhasdu cahsd ausd{" "}
+              Opus environment benignos dirigens proxima tooid huc solve
+              calciamentum tibi tam multa spectare instructor.{" "}
             </p>
           </div>
           <div className="icon">
             <ImNewspaper />
             <p>
-              this is my icon i am hieu stuf ffsfasd asda sdasda sda sda sd asd
-              dienhasdu cahsd ausd{" "}
+              Cum pace dirigens ad ambitum tooid opus, hic tam multa amico
+              exspectanda mus.{" "}
             </p>
           </div>
         </div>

@@ -7,9 +7,9 @@ function Content2(props) {
       <article className="content">
         <h3>Come here with us</h3>
         <p className="msg">
-          hi my name is hieu , i a superman as as da sdc as d ase asd a sd asd
-          asa asd asd a sd as da sd asd ac asfhasch ascgags dahs as adsdas asd
-          asda sda sdasd ádd
+          Amoris abest ut obliviscantur dierum spatio fervens quam tristis
+          guttae sunt nequam. Amoris abest ut obliviscantur dierum spatio
+          fervens quam tristis guttae sunt nequam
         </p>
         <button className="btn">Come here</button>
       </article>
@@ -20,6 +20,9 @@ function Content2(props) {
 const Wrapper = styled.section`
   background-color: var(--clr-primary-9);
   display: flex;
+  p {
+    line-height: 2;
+  }
   article {
     margin: 4rem auto;
   }

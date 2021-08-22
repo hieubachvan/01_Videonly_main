@@ -12,8 +12,11 @@ function Work(props) {
   return (
     <Wrapper>
       <article className="title">
-        <h3>Hello my name is hieu</h3>
-        <h5>the first time i apply to this job</h5>
+        <h3>Salve mi Nomen Hui</h3>
+        <h5>
+          Hoc est primum applicare hoc enim loco velit, et considerans auxilium
+          mihi
+        </h5>
       </article>
       <div className="content">
         <ul className="list-work1">
@@ -22,8 +25,9 @@ function Work(props) {
               <span>
                 <HiOutlineBookOpen />
               </span>
-              hahahahahsyahschas hash ash hda sdh acshd aasda sdas dasd asdasda
-              sda sd asd wqwe asd qwed asc asdsdchs cashc as hahsd ycaheyasdh
+              Singapore scriptor Ministrum Externorum predicti Vivianus
+              Balakrishnan in hac Airbase. Comitante ms Tullius Cicero sunt
+              custodes, et duces securitas plus quam XX.
             </p>
           </li>
           <li>
@@ -31,8 +35,8 @@ function Work(props) {
               <span>
                 <HiOutlineKey />
               </span>
-              hahahahahsyahschas hash ash hasd awdsd rasdasdwdasd ar asdeqwasd
-              qweasdda sdh acshd achs cashc as hahsd ycaheyasdh
+              US Vice Praeses erat receptum ab Singapore scriptor Ministrum
+              Externorum predicti Vivianus Balakrishnan in hac Airbase.
             </p>
           </li>
           <li>
@@ -40,8 +44,8 @@ function Work(props) {
               <span>
                 <IoMdPaper />
               </span>
-              hahahahahsyahschasy hash ash asd awdsd rasdasdwdasd ar asdeqwasd
-              qweasdhda sdh acshd achs cashc as hahsd caheyasdh
+              Externorum predicti Vivianus Balakrishnan in hac Airbase.
+              Comitante ms Tullius Cicero sunt custodes, et duces securitas
             </p>
           </li>
         </ul>
@@ -54,8 +58,8 @@ function Work(props) {
               <span>
                 <AiOutlineUser />
               </span>
-              hahahahahsyahschas hash ash hdaasd awdsd rasdasdwdasd ar asdeqwasd
-              qweasd sdh acshd achs cashc as hahsd ycaheyasdh
+              erat receptum ab Singapore scriptor Ministrum Externorum predicti
+              Vivianus Balakrishnan in hac Airbase.
             </p>
           </li>
           <li>
@@ -63,8 +67,9 @@ function Work(props) {
               <span>
                 <HiOutlineBookOpen />
               </span>
-              hahahahahsyahschasy hash ash hasd awdsd rasdasdwdasd ar asdeqwasd
-              qweasdda sdh acshd achs cashc as hahsd caheyasdh
+              scriptor Ministrum Externorum predicti Vivianus Balakrishnan in
+              hac Airbase. Comitante ms Tullius Cicero sunt custodes, et duces
+              securitas plus quam XX.
             </p>
           </li>
           <li>
@@ -72,13 +77,13 @@ function Work(props) {
               <span>
                 <HiOutlineBookOpen />
               </span>
-              hahahahahsyahschas hash ash hdaasd awdsd rasdasdwdasd ar asdeqwasd
-              qweasd sdh acshd achs cashc as hahsd ycaheyasdh
+              US Vice Praeses erat receptum ab Singapore scriptor Ministrum
+              Externorum predicti Vivianus Balakrishnan in hac Airbase.
             </p>
           </li>
         </ul>
       </div>
-      <button className="btn">please recruit me</button>
+      <button className="btn">Mihi sis supplementum</button>
       <hr />
     </Wrapper>
   );

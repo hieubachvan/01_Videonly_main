@@ -11,8 +11,24 @@ function List() {
           <IoNewspaperOutline />
 
           <div className="container">
-            <h4 className="title">My house</h4>
-            <p className="info">ahsd asha sdhas dahs dhascyasdhasd</p>
+            <h4 className="title">Domus me</h4>
+            <p className="info">permittens me: ego eram adhuc cogitas, </p>
+          </div>
+        </article>
+        <article className="story">
+          <IoNewspaperOutline />
+
+          <div className="container">
+            <h4 className="title">In lectulo</h4>
+            <p className="info">permittens me: ego eram adhuc cogitas, </p>
+          </div>
+        </article>
+        <article className="story">
+          <IoNewspaperOutline />
+
+          <div className="container">
+            <h4 className="title">cubiculum</h4>
+            <p className="info">permittens me: ego eram adhuc cogitas, </p>
           </div>
         </article>
         <article className="story">
@@ -20,7 +36,7 @@ function List() {
 
           <div className="container">
             <h4 className="title">My house</h4>
-            <p className="info">ahsd asha sdhas dahs dhascyasdhasd</p>
+            <p className="info">Quoniam tempus erat, cum invalidus es</p>
           </div>
         </article>
         <article className="story">
@@ -28,7 +44,7 @@ function List() {
 
           <div className="container">
             <h4 className="title">My house</h4>
-            <p className="info">ahsd asha sdhas dahs dhascyasdhasd</p>
+            <p className="info">Quoniam tempus erat, cum invalidus es</p>
           </div>
         </article>
         <article className="story">
@@ -36,32 +52,19 @@ function List() {
 
           <div className="container">
             <h4 className="title">My house</h4>
-            <p className="info">ahsd asha sdhas dahs dhascyasdhasd</p>
-          </div>
-        </article>
-        <article className="story">
-          <IoNewspaperOutline />
-
-          <div className="container">
-            <h4 className="title">My house</h4>
-            <p className="info">ahsd asha sdhas dahs dhascyasdhasd</p>
-          </div>
-        </article>
-        <article className="story">
-          <IoNewspaperOutline />
-
-          <div className="container">
-            <h4 className="title">My house</h4>
-            <p className="info">ahsd asha sdhas dahs dhascyasdhasd</p>
+            <p className="info">
+              Quoniam tempus erat, cum invalidus est cor meum
+            </p>
           </div>
         </article>
       </section>
       <div className="btn-container">
         <p className="msg">
-          hasya ahsd yas dasdha adsd asda sda sd asdas dasdha sdahsd asdy
+          Quoniam tempus erat, cum invalidus est cor meum, ut non obliviscar
+          permittens me: ego eram adhuc cogitas, qui prope.
         </p>
         <button className="btn" type="button">
-          Come here
+          Quoniam
         </button>
       </div>
     </Wrapper>
@@ -92,7 +95,7 @@ const Wrapper = styled.div`
     border: 1px solid var(--clr-black);
     display: flex;
     align-items: center;
-    min-height: 120px;
+    min-height: 150px;
   }
   .story:hover {
     background-color: var(--clr-primary-5);
