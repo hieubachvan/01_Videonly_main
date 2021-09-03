@@ -13,9 +13,14 @@ function Footer(props) {
     <Wrapper>
       <article className="contact">
         <ul className="contact-option">
-          <li>Home</li>
-          <li>Company</li>
-          <li>Address</li>
+          <li>예쁜 목소리</li>
+          <li>예쁜 목</li>
+          <li>쁜 목소리</li>
+        </ul>
+        <ul className="contact-info">
+          <li>예쁜 목소리 예쁜 목소리 목소리 예쁜 목소리</li>
+          <li>예쁜 목 예쁜 목소리 목소리 예쁜 목소리</li>
+          <li>쁜 목소리 예쁜 목소리 목소리 예쁜 목소리</li>
         </ul>
       </article>
       <div className="social-network">
@@ -50,23 +55,30 @@ const Wrapper = styled.section`
   background-color: var(--light-gray);
   display: flex;
   justify-content: space-between;
-  padding: 4rem 14rem;
+  padding: 3vw 10vw;
+
   ul {
     list-style-type: none;
   }
   .contact-option {
     display: flex;
+    padding: 0;
     li {
-      margin-right: 2rem;
-      font-size: 1.5rem;
-      opacity: 0.7;
+      margin-right: 1vw;
+      font-size: 1vw;
+      opacity: 0.9;
     }
+  }
+  .contact-info {
+    padding: 0;
+    opacity: 0.5;
+    font-size: 0.8vw;
   }
   .list {
     display: flex;
   }
   .network {
-    margin: 0 0.5rem;
+    margin: 0 0.5vw;
     padding: 4px 9px 7px 9px;
     background-color: #bcc1c8;
     border-radius: 50%;

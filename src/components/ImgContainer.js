@@ -32,6 +32,9 @@ const ImgContainer = () => {
 
 const Wrapper = styled.div`
   padding: 3vw 0;
+  button {
+    display: none;
+  }
   .img-container {
     color: #fff;
     font-size: 30px;

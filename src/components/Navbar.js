@@ -1,14 +1,15 @@
 import React from "react";
 import styled from "styled-components";
 import logo from "../assets/logo.svg";
-import { FaBars } from "react-icons/fa";
+import { FiMenu } from "react-icons/all";
 import { Link } from "react-router-dom";
 import { links } from "../utils/constants";
 import { useProductsContext } from "../context/context";
+import { useState, useRef, useEffect } from "react";
 
 const Nav = () => {
-  const { isSidebarOpen, openSidebar } = useProductsContext();
-  // console.log(isSidebarOpen);
+  const [toggleSideBar, setToggleSideBar] = useState(false);
+  console.log(toggleSideBar);
   return (
     <Wrapper>
       <div className="hero-image">
@@ -26,7 +27,27 @@ const Nav = () => {
               Join
             </button>
           </div>
+          <div className="side-btn">
+            <button
+              onClick={() => setToggleSideBar(!toggleSideBar)}
+              className="icon"
+            >
+              <FiMenu />
+            </button>
+          </div>
+          <div className={`${toggleSideBar ? "sidebar active" : "sidebar"}`}>
+            <button type="button" className="btn">
+              Login
+            </button>
+            <hr width="100%" size="4px" />
+            <button type="button" className="btn">
+              Join
+            </button>
+          </div>
         </div>
+        {/* .................side bar................ */}
+
+        {/* .................side bar................ */}
         <div className="hero-text">
           <p>
             예쁜 목소리'는 수현 <br />
@@ -43,10 +64,41 @@ const Nav = () => {
 };
 
 const Wrapper = styled.nav`
+.side-btn {
+  display: none;
+}
+.sidebar {
+  display: none;
+  flex-direction: column;
+  background-color: var(--black);
+  width: 10vw;
+  border-radius:8px;
+  position: absolute;
+  right: 5%;
+  top: 100%;
+  hr {
+    margin: 0;
+    color: var(--white);
+    text-align: center;
+  }
+
+  button {
+    color: var(--white);
+    font-size: 2vw;
+  }
+  .btn:hover {
+    background-color: var(--white);
+    color: var(--black);
+    border-color: var(--black);
+  }
+}
+.sidebar.active {
+  display: flex;
+}
   .hero-image {
     background-image: url("https://images.pexels.com/photos/8892/pexels-photo.jpg?auto=compress&cs=tinysrgb&h=750&w=1260");
-    background-color: #cccccc;
-    height: 50vw;
+
+    height: 40vw;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -86,14 +138,16 @@ const Wrapper = styled.nav`
   }
   .nav-center {
     display: flex;
+      align-items: center;
     justify-content: space-between;
-    padding: 2vw 20vw;
+    padding: 2vw 10vw;
   }
   .nav-header {
     align-items: center;
     .btn {
-      font-size: 2vw;
+      font-size: 1.6vw;
       font-weight: bold;
+      color: var(--white);
     }
   }
   .btn {
@@ -103,15 +157,73 @@ const Wrapper = styled.nav`
     .btn {
       background-color: transparent;
       border: 1.6px solid var(--whitey-90pc);
-      margin-left: 4vw;
+      margin-left: 1vw;
       font-weight: 500;
-      width: 9vw;
-      font-size: 1.5vw;
+      width: 6vw;
+      font-size: 1vw;
       border-radius: 8px;
     }
     .btn.active {
       background-color: var(--peach);
       border-color: var(--peach);
+    }
+  }
+  @media screen and (max-width: 960px) {
+   
+    .side-btn {
+  display: block;
+  .icon {
+    border:none;
+    background-color: var(--white);
+  }
+
+  svg {
+    font-size: 4vw;
+
+  }
+}
+    .hero-image {
+      background-image: none;
+    background-color: var(--light-gray);
+
+    }
+    .hero-text {
+      text-align: left;
+      color: var(--black);
+      left: 30%;
+    }
+    .nav-btn {
+      display: none;
+
+    .btn {
+      background-color: transparent;
+      border: 1.8px solid var(--peach);
+      margin-left: 4vw;
+      font-weight: 500;
+      width: 9vw;
+      font-size: 1.5vw;
+      border-radius: 8px;
+      color: var(--peach);
+    }
+    .btn.active {
+      background-color: var(--peach);
+      border-color: var(--peach);
+      color: var(--white);
+    }
+  }
+  .nav-center {
+    position: relative;
+    display: flex;
+      align-items: center;
+    padding: 1vw 5vw;
+    background-color: var(--white);
+
+
+  }
+  .nav-header {
+    .btn {
+      color: var(--black);
+
     }
   }
 `;
