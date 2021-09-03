@@ -4,40 +4,57 @@ import styled from "styled-components";
 function Content2(props) {
   return (
     <Wrapper>
-      <article className="content">
-        <h3>Come here with us</h3>
-        <p className="msg">
-          Amoris abest ut obliviscantur dierum spatio fervens quam tristis
-          guttae sunt nequam. Amoris abest ut obliviscantur dierum spatio
-          fervens quam tristis guttae sunt nequam
-        </p>
-        <button className="btn">Come here</button>
-      </article>
+      <section className="section-center">
+        <article className="content">
+          <div className="sub-title">
+            <p>How do i make a video</p>
+          </div>
+          <div className="title">
+            <p>행운입니다 행운입니다</p>
+          </div>
+          <div className="desc">
+            <p>
+              이수현의 예쁜 행복한 힐링 목소리 바로 이런 모아듣기가 필요했습니다
+              제작진 사랑합니다 수현양의 아름다운 노래를 들을 수 있어서 너무
+              행복합니다 ..악뮤와 같은 시대에 있다는 것 자체가 행운입니다.
+              수현양의 아름다운 노래를 들을 수 있어서 너무 행복합니다 ..악뮤와
+              같은 시대에 있다는 것 자체가 행운입니다.
+            </p>
+          </div>
+        </article>
+        <article className="img">
+          <img src="img8.png" className="main-img" alt="main-img" />
+        </article>
+      </section>
     </Wrapper>
   );
 }
 
 const Wrapper = styled.section`
-  background-color: var(--clr-primary-9);
+  padding: 8vw 14vw;
   display: flex;
-  p {
-    line-height: 2;
-  }
-  article {
-    margin: 4rem auto;
+  margin: auto;
+  .section-center {
+    display: flex;
+    margin: auto;
+
+    img {
+      width: 30vw;
+      height: auto;
+    }
   }
   .content {
-    text-align: center;
+    display: flex;
+    flex-direction: column;
+    text-align: right;
+    margin-right: 5vw;
+    width: 50%;
+    .sub-title {
+      color: var(--peach);
+    }
   }
-  .msg {
-    max-width: 500px;
-  }
-  .btn {
-    border-radius: 20px;
-  }
-  @media screen and (max-width: 416px) {
-    padding-right: 4rem;
-    padding-left: 4rem;
+  .desc {
+    opacity: 0.7;
   }
 `;
 

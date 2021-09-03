@@ -11,140 +11,150 @@ import {
 function Work(props) {
   return (
     <Wrapper>
-      <article className="title">
-        <h3>Salve mi Nomen Hui</h3>
-        <h5>
-          Hoc est primum applicare hoc enim loco velit, et considerans auxilium
-          mihi
-        </h5>
-      </article>
       <div className="content">
-        <ul className="list-work1">
-          <li>
-            <p>
-              <span>
-                <HiOutlineBookOpen />
-              </span>
-              Singapore scriptor Ministrum Externorum predicti Vivianus
-              Balakrishnan in hac Airbase. Comitante ms Tullius Cicero sunt
-              custodes, et duces securitas plus quam XX.
-            </p>
-          </li>
-          <li>
-            <p>
-              <span>
-                <HiOutlineKey />
-              </span>
-              US Vice Praeses erat receptum ab Singapore scriptor Ministrum
-              Externorum predicti Vivianus Balakrishnan in hac Airbase.
-            </p>
-          </li>
-          <li>
-            <p>
-              <span>
-                <IoMdPaper />
-              </span>
-              Externorum predicti Vivianus Balakrishnan in hac Airbase.
-              Comitante ms Tullius Cicero sunt custodes, et duces securitas
-            </p>
-          </li>
-        </ul>
-        <article className="img-center">
-          <img src={img4} alt="color" />
-        </article>
-        <ul className="list-work2">
-          <li>
-            <p>
-              <span>
-                <AiOutlineUser />
-              </span>
-              erat receptum ab Singapore scriptor Ministrum Externorum predicti
-              Vivianus Balakrishnan in hac Airbase.
-            </p>
-          </li>
-          <li>
-            <p>
-              <span>
-                <HiOutlineBookOpen />
-              </span>
-              scriptor Ministrum Externorum predicti Vivianus Balakrishnan in
-              hac Airbase. Comitante ms Tullius Cicero sunt custodes, et duces
-              securitas plus quam XX.
-            </p>
-          </li>
-          <li>
-            <p>
-              <span>
-                <HiOutlineBookOpen />
-              </span>
-              US Vice Praeses erat receptum ab Singapore scriptor Ministrum
-              Externorum predicti Vivianus Balakrishnan in hac Airbase.
-            </p>
-          </li>
-        </ul>
+        <div className="title">
+          <p>제작진 사랑합니다 수현양의</p>
+        </div>
+        <div className="desc">
+          <p>
+            제작진 사랑합니다 수현양의제작진 <br />
+            제작진 사랑합니다 수현양의제작진 사랑합니다{" "}
+          </p>
+        </div>
       </div>
-      <button className="btn">Mihi sis supplementum</button>
-      <hr />
+      <div className="img-container">
+        <article className="img-block img1">
+          <div className="title">
+            <p>제작진</p>
+          </div>
+          <div className="desc">
+            <p>제작진 사랑합니다 수현양의 아름다운 노래를 들을 수 있어서</p>
+          </div>
+        </article>
+        <article className="img-block img2">
+          <div className="title">
+            <p>아름다운</p>
+          </div>
+          <div className="desc">
+            <p>제작진 사랑합니다 수현양의 아름다운 노래를 들을 수 있어서</p>
+          </div>
+        </article>
+        <article className="img-block img3">
+          <div className="title">
+            <p>아름다운</p>
+          </div>
+          <div className="desc">
+            <p>제작진 사랑합니다 수현양의 아름다운 노래를 들을 수 있어서</p>
+          </div>
+        </article>
+        <article className="img-block img4">
+          <div className="title">
+            <p>수현양</p>
+          </div>
+          <div className="desc">
+            <p>제작진 사랑합니다 수현양의 아름다운 노래를 들을 수 있어서</p>
+          </div>
+        </article>
+      </div>
     </Wrapper>
   );
 }
 const Wrapper = styled.section`
-  padding: 2rem 4rem;
+  ${"" /* background-color: var(--light-gray); */}
+  padding: 3vw 10vw;
   display: flex;
-  ${"" /* height: 100vh; */}
-
+  margin: auto;
   flex-direction: column;
-  @media (max-width: 970px) {
-    img {
-      display: none;
+
+  .content {
+    text-align: center;
+    margin-top: 2vw;
+  } 
+  }
+  .img-block {
+    
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    padding: 1.5vw 2vw;
+    background-color: red;
+    .title {
+    font-size: 3vw;
+    font-weight: 500;
+    margin-top: 90%;
+    color: var(--peach);
+
     }
-    .content {
-      display: grid;
-      justify-content: center;
-      grid-template-columns: 1fr 1fr;
+  }
+  .img-block.img1 {
+    background-image: url("img9.png");
+    margin-right: 0.5vw;
+    display: flex;
+    flex-direction: column;
+    align-content: flex-end;
+  }
+  .img-block.img2 {
+    background-image: url("img10.png");
+    margin-left: 0.5vw;
+    margin-right: 0.5vw;
+  }
+  .img-block.img3 {
+    margin-left: 0.5vw;
+
+    background-image: url("img11.png");
+  }
+  .img-block.img4 {
+    margin-left: 0.5vw;
+
+    background-image: url("img12.png");
+  }
+  .img-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 4vh;
+
+    p {
+      margin-bottom: 0.8vw;
+      display: flex;
+      justify-content: space-between;
     }
+    svg {
+      color: var(--teflon);
+    }
+    .title {
+    font-size: 2vw;
+    font-weight: 500;
+    margin-bottom: 1vw;
+    p {
+    text-align: center;
+      margin: auto;
+    }
+  }
+  }
+
+  
+  .desc {
+    color: var(--font-gray);
+    opacity: 0.7;
   }
   p {
-    color: var(--clr-grey-5);
+    margin-bottom: 0;
+    text-align: center;
   }
-  p: hover {
-    color: var(--clr-grey-2);
-    cursor: pointer;
-  }
-  span {
-    color: var (--clr-grey-1);
-  }
-  svg {
-    font-size: 2rem;
-    display: block;
-  }
-
-  .title {
-    margin-bottom: 5rem;
-    margin-top: 5rem;
-  }
-  .img-center {
-    margin: auto;
-  }
-  .content {
-    display: grid;
-    justify-content: center;
-    grid-template-columns: 1fr 2fr 1fr;
-  }
-  .list-work1 {
-    display: flex;
-    justify-content: flex-start;
-    flex-direction: column;
-  }
-  .list-work2 {
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-end;
-  }
-  .btn {
-    width: 200px;
-    margin: 2rem auto;
-    border-radius: 20px;
+  @media screen and (max-width:670px) {
+    padding: 3vw 1vw;
+   
+    .img-container {
+      display: flex;
+      flex-direction: column;
+    margin: 4vw auto;
+    }
+    .img-block {
+      margin-bottom: 2vh;
+      width: 60vw;
+      height: auto;
+    }
   }
 `;
 

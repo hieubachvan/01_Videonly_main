@@ -2,63 +2,77 @@ import React from "react";
 import styled from "styled-components";
 
 import {
-  AiFillFacebook,
-  AiFillInstagram,
-  FaTwitterSquare,
+  ImYoutube,
+  FaFacebookF,
+  AiOutlineInstagram,
+  SiNetflix,
 } from "react-icons/all";
 
 function Footer(props) {
   return (
     <Wrapper>
-      <section className="contact">
+      <article className="contact">
         <ul className="contact-option">
-          <li>phone: 0852889871</li>
-          <li>Fax: 0123818247123</li>
-          <li>Email: hieubachvan@email.com</li>
+          <li>Home</li>
+          <li>Company</li>
+          <li>Address</li>
         </ul>
-      </section>
-      <section className="social-network">
-        <a href="https://www.facebook.com/" target="_blank">
-          <AiFillFacebook />
-        </a>
-        <a href="https://www.instagram.com/" target="_blank">
-          <AiFillInstagram />
-        </a>
-        <a href="https://www.twitter.com/" target="_blank">
-          <FaTwitterSquare />
-        </a>
-      </section>
+      </article>
+      <div className="social-network">
+        <ul className="list">
+          <li className="network">
+            <a href="https://www.netflix.com/vn/">
+              <SiNetflix />
+            </a>
+          </li>
+          <li className="network">
+            <a href="https://www.instagram.com/">
+              <AiOutlineInstagram />
+            </a>
+          </li>
+          <li className="network">
+            <a href="https://www.facebook.com/">
+              <FaFacebookF />
+            </a>
+          </li>
+          <li className="network">
+            <a href="https://www.youtube.com/">
+              <ImYoutube />
+            </a>
+          </li>
+        </ul>
+      </div>
     </Wrapper>
   );
 }
 const Wrapper = styled.section`
-  @media (min-width: 960px) {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-
-    padding: 0 20rem;
-    margin-bottom: 2rem;
-
-    .social-network {
-      display: flex;
-      justify-content: flex-end;
-    }
-    svg {
-      font-size: 1.8rem;
-      margin: 0.5rem;
-      color: var(--clr-primary-1);
+  height: 320px;
+  background-color: var(--light-gray);
+  display: flex;
+  justify-content: space-between;
+  padding: 4rem 14rem;
+  ul {
+    list-style-type: none;
+  }
+  .contact-option {
+    display: flex;
+    li {
+      margin-right: 2rem;
+      font-size: 1.5rem;
+      opacity: 0.7;
     }
   }
-  @media screen and (max-width: 959px) {
-    margin-bottom: 2rem;
-    display: grid;
-    grid-template-columns: 1fr;
-    padding: 0 5rem;
+  .list {
+    display: flex;
   }
-  svg {
-    font-size: 1.2rem;
-    margin-right: 0.5rem;
-    color: var(--clr-primary-1);
+  .network {
+    margin: 0 0.5rem;
+    padding: 4px 9px 7px 9px;
+    background-color: #bcc1c8;
+    border-radius: 50%;
+    a {
+      color: var(--white);
+    }
   }
 `;
 

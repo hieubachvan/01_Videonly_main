@@ -4,74 +4,42 @@ import styled from "styled-components";
 function Companies(props) {
   return (
     <Wrapper>
-      <div className="title">
-        <h2>ego have pauci societates joined</h2>
-        <h5>
-          Hic sunt aliqua typicam societates praeter ipsam projects justo ac
-          justo ut non potuerunt projects
-        </h5>
+      <div className="overlay"></div>
+      <div className="image">
+        <div className="text">
+          <h2 className="title">제작진 사랑합니다 수현양의</h2>
+          <p className="subtitle">
+            제작진 사랑합니다 수현양의제작진 사랑합니다
+          </p>
+        </div>
       </div>
-      <article className="img-container">
-        <img
-          src="https://cdn.pixabay.com/photo/2015/05/26/09/37/paypal-784404_960_720.png"
-          alt="hello"
-        />
-        <img
-          src="https://cdn.pixabay.com/photo/2017/08/22/11/55/linked-in-2668692_960_720.png"
-          alt="hello"
-        />
-        <img
-          src="https://cdn.pixabay.com/photo/2015/10/31/12/54/google-1015751_960_720.png"
-          alt="hello"
-        />
-        <img
-          src="https://cdn.pixabay.com/photo/2015/05/26/09/37/paypal-784404_960_720.png"
-          alt="hello"
-        />
-        <img
-          src="https://cdn.pixabay.com/photo/2017/08/22/11/55/linked-in-2668692_960_720.png"
-          alt="hello"
-        />
-        <img
-          src="https://cdn.pixabay.com/photo/2015/10/31/12/54/google-1015751_960_720.png"
-          alt="hello"
-        />
-      </article>
     </Wrapper>
   );
 }
 const Wrapper = styled.section`
-  h2 {
-    margin-bottom: 30px;
+  .overlay {
+    position: absolute;
+    width: 100%;
+    height: 280px;
+    background-color: rgba(0, 0, 0, 0.7);
+    z-index: 2;
   }
-  background-color: var(--clr-primary-9);
-  display: flex;
-  flex-direction: column;
-  .title {
-    margin: 160px auto 80px;
+  .image {
+    background-image: url("https://c8.alamy.com/comp/2A6K0M5/young-business-people-analizing-the-chart-diagram-scheme-at-the-conference-close-up-photo-working-process-during-the-metting-2A6K0M5.jpg");
+    height: 280px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
   }
-  .img-container {
-    margin: 0 auto 100px;
-  }
-  img {
-    height: 3rem;
-    margin: 1rem;
-  }
-  @media (max-width: 414px) {
-    .img-container {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-    }
-    img {
-      height: 2rem;
-    }
-    .title {
-      max-width: 400px;
-      padding: 0 2rem;
-    }
-    h2 {
-      font-size: 1.5rem;
-    }
+  .text {
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    z-index: 3;
   }
 `;
 

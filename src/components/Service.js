@@ -3,114 +3,101 @@ import styled from "styled-components";
 import img1 from "../assets/img1.png";
 import img2 from "../assets/img2.png";
 import img3 from "../assets/img3.png";
-import { BsArrowRight } from "react-icons/all";
+import {
+  BsArrowRight,
+  AiFillProfile,
+  RiMessage2Fill,
+  IoVideocam,
+} from "react-icons/all";
 
 function Service(props) {
   return (
     <Wrapper>
-      <div className="center">
+      <section className="section-center">
         <div className="title">
-          <h3>There is some service available</h3>
+          <p>T행운입니다 행운입</p>
         </div>
-        <div className="img-container">
-          <article className="item">
-            <img src={img1} alt="hashuausc" />
-            <div className="img-msg">
-              <p>Amoris abest ut obliviscantur dierum spatio fervens quam </p>
-              <h5>
-                More views
-                <span>
-                  <BsArrowRight />
-                </span>
-              </h5>
-            </div>
-          </article>
-          <article className="item">
-            <img src={img2} alt="hashuausc" />
-            <div className="img-msg">
-              <p>obliviscantur dierum spatio fervens quam tristis guttae </p>
-              <h5>
-                More views
-                <span>
-                  <BsArrowRight />
-                </span>
-              </h5>
-            </div>
-          </article>
-          <article className="item">
-            <img src={img3} alt="hashuausc" />
-            <div className="img-msg">
-              <p>
-                obliviscantur dierum spatio fervens quam tristis guttae sunt
-                nequam{" "}
-              </p>
-              <h5>
-                More views
-                <span>
-                  <BsArrowRight />
-                </span>
-              </h5>
-            </div>
-          </article>
+        <article className="block-container">
+          <div className="block">
+            <AiFillProfile />
+            <span className="sub-title"> 행운입</span>
+            <span className="count">41</span>
+          </div>
+          <div className="block">
+            <RiMessage2Fill />
+            <span className="sub-title">입니다 </span>
+            <span className="count">164</span>
+          </div>
+          <div className="block">
+            <IoVideocam />
+            <span className="sub-title">T행운입</span>
+            <span className="count">82</span>
+          </div>
+        </article>
+        <div className="desc">
+          <p>제작진 사랑합니다 수현양의 아름다운 노래를 들을 수 있어서</p>
         </div>
-      </div>
+        <button type="button" className="btn">
+          수현양의
+        </button>
+      </section>
     </Wrapper>
   );
 }
 
 const Wrapper = styled.section`
-  margin-top: 7rem;
-  margin-bottom: 120px;
-  .item {
-    background-color: var(--clr-primary-8);
-    margin: 1rem;
-    border: 2px solid var(--clr-primary-7);
-    border-radius: 4px;
+  background-color: var(--background-black);
+  padding: 4vw;
+  display: flex;
+  .section-center {
+    margin: auto;
+    display: flex;
+    flex-direction: column;
   }
-  img:hover {
+  .title {
+    color: var(--white);
+    text-align: center;
+    margin-bottom: 2vw;
+  }
+  .block {
+    padding: 1.5vw;
+    background-color: var(--white);
+    width: 33%;
+    margin: 1vw;
+    width: 20vw;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    min-height: 15vw;
+    svg {
+      margin: auto;
+      font-size: 1.5vw;
+    }
+  }
+  .block-container {
+    display: flex;
+    margin-bottom: 3vw;
+  }
+  .count {
+    font-size: 3vw;
+  }
+  .sub-title {
     opacity: 0.6;
   }
-  h3 {
+  .desc {
+    color: var(--white);
     text-align: center;
-    margin-bottom: 80px;
+    margin-bottom: 1vh;
   }
-
-  .img-container {
-    display: flex;
-    justify-content: center;
-  }
-  img {
-    width: 380px;
-    height: 240px;
-    margin-bottom: 30px;
-  }
-  .img-msg {
-    width: 380px;
-    margin-bottom: 2rem;
-    padding-left: 1rem;
-    padding-right: 1rem;
-  }
-  p {
-    color: var(--clr-primary-1);
-  }
-  h5 {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-  }
-  svg {
-    margin-top: 4px;
-    font-size: 2rem;
-    cursor: pointer;
-  }
-  @media screen and (max-width: 414px) {
-    .img-container {
-      display: grid;
-      grid-template-columns: 1fr;
-    }
-    h3 {
-      padding: 0 2rem;
-    }
+  .btn {
+    text-align: center;
+    background-color: var(--peach);
+    color: var(--white);
+    width: 9vw;
+    height: 3vw;
+    margin: auto;
+    font-size: 1vw;
+    border-radius: 1vw;
   }
 `;
 

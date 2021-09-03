@@ -10,112 +10,108 @@ const Nav = () => {
   const { isSidebarOpen, openSidebar } = useProductsContext();
   // console.log(isSidebarOpen);
   return (
-    <NavContainer>
-      <div className="nav-center">
-        <div className="nav-header">
-          <a href="/">
-            <img src={logo} alt="logo" />
-          </a>
-          <button type="button" className="nav-toggle" onClick={openSidebar}>
-            <FaBars />
+    <Wrapper>
+      <div className="hero-image">
+        <div className="nav-center">
+          <div className="nav-header">
+            <button type="button" className="btn">
+              Videonly
+            </button>
+          </div>
+          <div className="nav-btn">
+            <button type="button" className="btn">
+              Login
+            </button>
+            <button type="button" className="btn active">
+              Join
+            </button>
+          </div>
+        </div>
+        <div className="hero-text">
+          <p>
+            예쁜 목소리'는 수현 <br />
+            이를 위한 말 아닐까 예쁜 목소리'는 <br /> 위한 말 아닐까
+          </p>
+          <h4>예쁜 목소리'는 수현이를 위한 말 아닐까</h4>
+          <button type="button" className="btn">
+            예쁜
           </button>
         </div>
-        <ul className="nav-links">
-          {links.map((link) => {
-            return (
-              <li key={link.id}>
-                <Link to={link.url}>{link.text}</Link>
-              </li>
-            );
-          })}
-        </ul>
-        <ul className="login-btn">
-          <li className="btn">Login</li>
-          <li className="btn">Register</li>
-        </ul>
       </div>
-    </NavContainer>
+    </Wrapper>
   );
 };
 
-const NavContainer = styled.nav`
-  height: 5rem;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  ${"" /* position: fixed; */}
-  z-index: 5;
-  ${"" /* background-color: var(--clr-primary-10); */}
-  width: 100%;
-  a {
+const Wrapper = styled.nav`
+  .hero-image {
+    background-image: url("https://images.pexels.com/photos/8892/pexels-photo.jpg?auto=compress&cs=tinysrgb&h=750&w=1260");
+    background-color: #cccccc;
+    height: 50vw;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
   }
 
+  .hero-text {
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    p {
+      font-size: 3vw;
+      margin-bottom: 2vw;
+    }
+    h4 {
+      margin-bottom: 2vw;
+      font-size: 1vw;
+    }
+    .btn {
+      background-color: var(--peach);
+      margin-left: 1vw;
+      font-weight: 500;
+      border-radius: 1vw;
+      width: 8vw;
+      height: 1vw;
+      font-size: 1vw;
+      padding-bottom: 1.7vw;
+    }
+    .btn:hover {
+      background-color: var(--grapefruit);
+      border-color: var(--grapefruit);
+      cursor: pointer;
+    }
+  }
   .nav-center {
-    width: 90vw;
-    margin: 0 auto;
-    max-width: var(--max-width);
+    display: flex;
+    justify-content: space-between;
+    padding: 2vw 20vw;
   }
   .nav-header {
-    display: flex;
     align-items: center;
-    justify-content: space-between;
-    img {
-      width: 175px;
-      margin-left: -15px;
-    }
-  }
-  .nav-toggle {
-    background: transparent;
-    border: transparent;
-    color: var(--clr-primary-5);
-    cursor: pointer;
-    svg {
-      font-size: 2rem;
-    }
-  }
-  .nav-links {
-    display: none;
-  }
-  .cart-btn-wrapper {
-    display: none;
-  }
-  @media (max-width: 985px) {
     .btn {
-      display: none;
+      font-size: 2vw;
+      font-weight: bold;
     }
   }
-
-  @media (min-width: 992px) {
+  .btn {
+    color: var(--whitey-90pc);
+  }
+  .nav-btn {
     .btn {
-      margin-left: 2rem;
+      background-color: transparent;
+      border: 1.6px solid var(--whitey-90pc);
+      margin-left: 4vw;
+      font-weight: 500;
+      width: 9vw;
+      font-size: 1.5vw;
+      border-radius: 8px;
     }
-    .nav-toggle {
-      display: none;
-    }
-    .nav-center {
-      display: grid;
-      grid-template-columns: auto 1fr auto;
-      align-items: center;
-    }
-    .nav-links {
-      display: flex;
-      justify-content: center;
-      li {
-        margin: 0 0.5rem;
-      }
-      a {
-        color: var(--clr-grey-3);
-        font-size: 1rem;
-        text-transform: capitalize;
-        letter-spacing: var(--spacing);
-        padding: 0.5rem;
-        &:hover {
-          border-bottom: 2px solid var(--clr-primary-7);
-        }
-      }
-    }
-    .cart-btn-wrapper {
-      display: grid;
+    .btn.active {
+      background-color: var(--peach);
+      border-color: var(--peach);
     }
   }
 `;
