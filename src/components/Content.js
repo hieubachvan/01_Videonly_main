@@ -136,6 +136,9 @@ const Wrapper = styled.section`
   }
   @media screen and (max-width: 1012px) {
     padding: 3vw 4vw;
+    .content {
+      padding: 0 3vw;
+    }
 
     .img-container {
       flex-direction: column;

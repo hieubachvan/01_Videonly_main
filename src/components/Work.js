@@ -80,10 +80,11 @@ const Wrapper = styled.section`
     padding: 1.5vw 2vw;
     background-color: red;
     .title {
-    font-size: 3vw;
+    font-size: 2vw;
     font-weight: 500;
-    margin-top: 90%;
+    margin-top: 95%;
     color: var(--peach);
+    margin-left: 4vw;
 
     }
   }
@@ -122,14 +123,7 @@ const Wrapper = styled.section`
     svg {
       color: var(--teflon);
     }
-    .title {
-    font-size: 2vw;
-    font-weight: 500;
-    margin-bottom: 1vw;
-    p {
-    text-align: center;
-      margin: auto;
-    }
+ 
   }
   }
 
@@ -144,7 +138,26 @@ const Wrapper = styled.section`
   }
   @media screen and (max-width:670px) {
     padding: 3vw 1vw;
-   
+    .img-block.img1 {
+      .title {
+        margin-left:0;
+      }
+    }
+    .img-block.img2 {
+      .title {
+        margin-left:0;
+      }
+    }
+    .img-block.img3 {
+      .title {
+        margin-left:0;
+      }
+    }
+    .img-block.img4 {
+      .title {
+        margin-left:0;
+      }
+    }
     .img-container {
       display: flex;
       flex-direction: column;
