@@ -168,6 +168,20 @@ const Wrapper = styled.section`
       width: 60vw;
       height: auto;
     }
+    .img-block {
+  
+    .title {
+    font-size: 1rem;
+
+
+    }
+    .desc {
+      font-size: .8rem;
+      p {
+        text-align: left;
+      }
+    }
+  }
   }
 `;
 

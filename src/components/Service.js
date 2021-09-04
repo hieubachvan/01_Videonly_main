@@ -99,6 +99,18 @@ const Wrapper = styled.section`
     font-size: 1vw;
     border-radius: 1vw;
   }
+  @media screen and (max-width: 416px) {
+    .desc {
+      font-size: 0.6rem;
+    }
+    .btn {
+      width: 4rem;
+      height: 1.2rem;
+      font-size: 0.5rem;
+      padding-bottom: 16px;
+      border-radius: 8px;
+    }
+  }
 `;
 
 export default Service;

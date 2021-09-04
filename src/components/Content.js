@@ -118,18 +118,18 @@ const Wrapper = styled.section`
   .note {
     color: var(--peach);
     font-weight: bold;
-    font-size: 1.2rem;
+    font-size: 1.2vw;
     margin-bottom: 1rem;
   }
   .title {
-    font-size: 1.6rem;
+    font-size: 1.6vw;
     font-weight: 500;
     margin-bottom: 1rem;
     opacity: 0.7;
   }
   .desc {
     color: var(--font-gray);
-    font-size: 1.2rem;
+    font-size: 1.2vw;
   }
   p {
     margin-bottom: 0;
@@ -158,6 +158,25 @@ const Wrapper = styled.section`
   }
   @media screen and (max-width: 415px) {
     padding: 3vw 0;
+    .img-block {
+      padding: 2vh 2.5vw;
+    }
+    .note {
+      color: var(--peach);
+      font-weight: bold;
+      font-size: 0.8rem;
+      margin-bottom: 1rem;
+    }
+    .title {
+      font-size: 1.2rem;
+    }
+    .desc {
+      color: var(--font-gray);
+      font-size: 0.6rem;
+    }
+    p {
+      margin-bottom: 0;
+    }
   }
 `;
 

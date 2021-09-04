@@ -86,6 +86,16 @@ const Wrapper = styled.section`
       color: var(--white);
     }
   }
+  @media screen and (max-width: 416px) {
+    .contact-option {
+      li {
+        font-size: 0.6rem;
+      }
+    }
+    .contact-info {
+      font-size: 0.4rem;
+    }
+  }
 `;
 
 export default Footer;

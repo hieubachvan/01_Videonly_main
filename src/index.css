@@ -70,3 +70,18 @@ body {
   font-size: 1vw;
   font-weight: 400;
 }
+@media screen and (max-width: 416px) {
+  .title {
+    font-size: 1.5rem;
+    font-weight: 500;
+  }
+  .sub-title { 
+    font-size: 1rem;
+    font-weight: 500;
+  }
+  
+  .desc {
+    font-size: 0.5rem;
+    font-weight: 400;
+  }
+}

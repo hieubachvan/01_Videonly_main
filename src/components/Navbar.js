@@ -71,7 +71,7 @@ const Wrapper = styled.nav`
   display: none;
   flex-direction: column;
   background-color: var(--black);
-  width: 10vw;
+  width: 8rem;
   border-radius:8px;
   position: absolute;
   right: 5%;
@@ -84,7 +84,7 @@ const Wrapper = styled.nav`
 
   button {
     color: var(--white);
-    font-size: 2vw;
+    font-size: 1rem;
   }
   .btn:hover {
     background-color: var(--white);
@@ -178,19 +178,34 @@ const Wrapper = styled.nav`
   }
 
   svg {
-    font-size: 4vw;
+    font-size: 1.7rem;
 
   }
+  
 }
     .hero-image {
       background-image: none;
     background-color: var(--light-gray);
-
+    height: 35vh;
     }
     .hero-text {
+      margin: 1rem 1rem;
       text-align: left;
       color: var(--black);
       left: 30%;
+      top: 50%;
+      p {
+        font-size: 1.2rem;
+      }
+      .btn {
+        width: 4rem;
+        height: 1.5rem;
+        font-size: .6rem;
+        border-radius: 10px;
+      }
+      h4 {
+    font-size: 0.7rem;
+  }
     }
     .nav-btn {
       display: none;
@@ -215,7 +230,7 @@ const Wrapper = styled.nav`
     position: relative;
     display: flex;
       align-items: center;
-    padding: 1vw 5vw;
+    padding: 1vw 3vw;
     background-color: var(--white);
 
 
@@ -223,7 +238,8 @@ const Wrapper = styled.nav`
   .nav-header {
     .btn {
       color: var(--black);
-
+      font-size: 1.5rem;
+      padding: 0;
     }
   }
 `;
