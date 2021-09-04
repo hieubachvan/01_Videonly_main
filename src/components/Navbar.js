@@ -186,14 +186,14 @@ const Wrapper = styled.nav`
     .hero-image {
       background-image: none;
     background-color: var(--light-gray);
-    height: 35vh;
+    height: 40vh;
     }
     .hero-text {
       margin: 1rem 1rem;
       text-align: left;
       color: var(--black);
       left: 30%;
-      top: 50%;
+      top: 55%;
       p {
         font-size: 1.2rem;
       }
